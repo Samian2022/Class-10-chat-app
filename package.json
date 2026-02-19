@@ -26,11 +26,12 @@
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "node server/index.js",
     "client": "react-scripts start",
-    "build": "react-scripts build",
+    "prebuild": "npm install",
+    "build": "npx react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:3001",
+  "proxy": "http://localhost:3005",
   "eslintConfig": {
     "extends": [
       "react-app",
